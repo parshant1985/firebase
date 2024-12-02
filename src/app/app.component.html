@@ -1,0 +1,10 @@
+<h2>Angular</h2>
+<h3>{{item$ | async | json}}</h3>
+<ul>
+  @for (item of (item$ | async); track item) {
+    <li>
+      {{ item.Name }} | {{item.price}} 
+    </li>
+  }
+</ul>
+
